@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+h2:after {
+  display: block;
+  height: 3px;
+  background-color: #a27250;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.item_details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4% auto;
+}
+.detailsText .details_Text {
+  color: #0e0d0d;
+  letter-spacing: 2px;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+}
+.details_Text span {
+  color: #a27250;
+  font-size: 1.5em;
+}
+.detailsText p {
+  text-align: center;
+  margin-top: 5%;
+  color: #0e0d0d;
+  font-size: 15px;
+}
+.btn-item {
+  margin-top: 3%;
+}
+#add-item {
+  background: #0e0d0d;
+  color: #a27250;
+  padding: 10px;
+  font-size: 1em;
+  letter-spacing: 1;
+}
+#toDoList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#to-do-itemID,
+#to-do-name,
+#to-do-price {
+  list-style: none;
+}
+#to-do-itemID > li,
+#to-do-name > li,
+#to-do-price > li {
+  width: 100%;
+  padding: 16px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  color: #0e0d0d;
+  font-size: 13px;
+}

@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+h2:after {
+  display: block;
+  height: 3px;
+  background-color: #a27250;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.log-in {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4% auto;
+}
+.log-in .log-inText {
+  color: #0e0d0d;
+  letter-spacing: 2px;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+}
+.log-inText span {
+  color: #a27250;
+  font-size: 1.5em;
+}
+.log-in p {
+  color: #0e0d0d;
+  font-size: 15px;
+}
+.log-inForm {
+  width: 30%;
+  padding: 50px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(360deg, transparent, #ecd3bf);
+}
+.log-inForm h3 {
+  color: #0e0d0d;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.log-inForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.log-inForm .inputBox input,
+.log-inForm .inputBox textarea {
+  width: 100%;
+  border: 1px solid #555;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+.log-inForm .inputBox .btn {
+  font-size: 1em;
+  padding: 10px;
+  color: #a27250;
+  background: #0e0d0d;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  max-width: 100px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+/* Queries */
+
+/* Small tables to big tablet: from 769px to 1032px */
+@media only screen and (min-width: 769px) and (max-width: 1032px) {
+  h2:after {
+    display: block;
+    height: 2px;
+    width: 80px;
+  }
+  .log-in .log-inText {
+    letter-spacing: 1px;
+    font-size: 22px;
+  }
+
+  .log-in p {
+    color: #0e0d0d;
+    font-size: 15px;
+  }
+  .log-inForm {
+    width: 50%;
+    padding: 40px;
+  }
+  .log-inForm h3 {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  .log-inForm .inputBox {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .log-inForm .inputBox input,
+  .log-inForm .inputBox textarea {
+    width: 100%;
+    padding: 12px;
+    color: #111;
+    outline: none;
+    font-size: 15px;
+  }
+  .log-inForm .inputBox .btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  h2:after {
+    display: block;
+    height: 2px;
+    width: 80px;
+  }
+  .log-in .log-inText {
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+
+  .log-in p {
+    color: #0e0d0d;
+    font-size: 13px;
+  }
+  .log-inForm {
+    width: 60%;
+    padding: 40px;
+  }
+  .log-inForm h3 {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  .log-inForm .inputBox {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .log-inForm .inputBox input,
+  .log-inForm .inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 13px;
+  }
+  .log-inForm .inputBox .btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  h2:after {
+    display: block;
+    height: 1.5px;
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  .log-in .log-inText {
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+
+  .log-in p {
+    color: #0e0d0d;
+    font-size: 10px;
+  }
+  .log-inForm {
+    width: 80%;
+    padding: 30px;
+  }
+  .log-inForm h3 {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  .log-inForm .inputBox {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .log-inForm .inputBox input,
+  .log-inForm .inputBox textarea {
+    width: 100%;
+    padding: 6px;
+    color: #111;
+    outline: none;
+    font-size: 10px;
+  }
+  .log-inForm .inputBox .btn {
+    font-size: 10px;
+    padding: 8px;
+  }
+}

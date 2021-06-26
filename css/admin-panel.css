@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+  margin: 0 auto;
+  min-height: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: inherit;
+  background: linear-gradient(#0e0d0d, #051015);
+}
+.loader {
+  position: relative;
+  width: 170px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #0e0d0d;
+  box-shadow: 0 0 5px #a27250, 0 0 25px #a27250, 0 0 50px #a27250,
+    0 0 100px #a27250;
+}
+.loader span {
+  position: absolute;
+  display: block;
+}
+.loader span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, transparent, #a27250);
+  animation: animate1 2s linear infinite;
+  animation-delay: 0s;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.loader span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(270deg, transparent, #a27250);
+  animation: animate3 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+.loader span:nth-child(2) {
+  top: -100px;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #a27250);
+  animation: animate2 2s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.loader span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #a27250);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1.5s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+header .logo {
+  color: #a27250;
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+/* Admin Panel */
+
+#admin-panel {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 10% auto;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  color: #0e0d0d;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
