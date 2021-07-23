@@ -20,9 +20,8 @@
     text-align: center;
   }
 
-  header ul li a {
+  .links a {
     width: 100%;
-    display: block;
     text-decoration: none;
     color: #a27250;
     font-size: 20px;
@@ -34,7 +33,26 @@
     margin-bottom: 1%;
     width: 30%;
   }
-
+  .nav-toggle {
+    font-size: 1.5rem;
+    color: white;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: inherit;
+  }
+  .nav-toggle:hover {
+    color: #a27250;
+  }
+  .links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
+  .show-links {
+    height: 27rem;
+  }
   /* Banner */
 
   .banner .content {
@@ -252,17 +270,38 @@
     display: block;
     text-align: center;
   }
-  header ul li a {
+  .links a {
     width: 100%;
-    display: block;
-    font-size: 18px;
+    text-decoration: none;
+    color: #a27250;
+    font-size: 17px;
     font-weight: 400;
-    padding: 10px 5px;
+    padding: 15px 5px;
   }
   header input[type="text"] {
     margin-top: 1%;
     margin-bottom: 1%;
     width: 50%;
+  }
+  .nav-toggle {
+    font-size: 1.3rem;
+    color: white;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: inherit;
+  }
+  .nav-toggle:hover {
+    color: #a27250;
+  }
+  .links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
+  .show-links {
+    height: 25rem;
   }
 
   /* Banner */
@@ -457,11 +496,11 @@
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   header {
-    position: inherit;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: inherit;
   }
   header .logo {
     font-size: 1.5em;
@@ -471,17 +510,38 @@
     display: block;
     text-align: center;
   }
-  header ul li a {
+  .links a {
     width: 100%;
-    display: block;
+    text-decoration: none;
+    color: #a27250;
     font-size: 15px;
     font-weight: 400;
-    padding: 8px 3px;
+    padding: 10px 5px;
   }
   header input[type="text"] {
     margin-top: 1%;
     margin-bottom: 1%;
     width: 40%;
+  }
+  .nav-toggle {
+    font-size: 1.2rem;
+    color: white;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: inherit;
+  }
+  .nav-toggle:hover {
+    color: #a27250;
+  }
+  .links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
+  .show-links {
+    height: 20rem;
   }
 
   /* Banner */
